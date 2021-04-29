@@ -1,5 +1,5 @@
 const isPalindrome = (word) => {
-    let wordForward = word.split('');
+    let wordForward = word.trim().split('');
     let wordBackward = wordForward.reverse().join('');
     return word === wordBackward;
 };
