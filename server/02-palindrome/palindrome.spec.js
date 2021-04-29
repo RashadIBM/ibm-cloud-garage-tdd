@@ -25,6 +25,10 @@ it('false for whitespace', () => {
 it('error for empty string', () => {
   expect(() => {
     isPalindrome('');
-  }).toThrowError('empty strings are not palindromes')
+  }).toThrowError('empty strings are not palindromes');
 });
-it.todo('error for not a string');
+it('error for not a string', () => {
+  expect(() => {
+    isPalindrome(121);
+  }).toThrowError('input must be a string');
+});
