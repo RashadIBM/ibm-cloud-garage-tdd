@@ -22,5 +22,9 @@ it('false for dad mom', () => {
 it('false for whitespace', () => {
   expect(isPalindrome('   ')).toBe(false);
 });
-it.todo('error for empty string');
+it('error for empty string', () => {
+  expect(() => {
+    isPalindrome('');
+  }).toThrowError('empty strings are not palindromes')
+});
 it.todo('error for not a string');
